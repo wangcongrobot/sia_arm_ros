@@ -1,0 +1,20 @@
+#controller_manager_ns: controller_manager  
+controller_list:  
+  - name: "sia_7f_arm"  
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory  
+    default: true  
+    joints:  
+      - sia_7f_joint1  
+      - sia_7f_joint2  
+      - sia_7f_joint3  
+      - sia_7f_joint4  
+      - sia_7f_joint5  
+      - sia_7f_gripper  
+
+  - name: sia_7f_arm_gripper_controller  
+    action_ns: gripper_action  
+    type: GripperCommand  
+    default: true  
+    joints:  
+      - sia_7f_finger_joint  

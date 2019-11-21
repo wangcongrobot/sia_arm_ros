@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find sia_7f_arm_description)/launch/spawn_sia_7f_arm.launch"/>
+    <include file="$(find sia_7f_arm_description)/launch/sia_7f_arm_control.launch"/>
+</launch>

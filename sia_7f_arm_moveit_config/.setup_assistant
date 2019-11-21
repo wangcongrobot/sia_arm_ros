@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: sia_7f_arm_description
+    relative_path: urdf/sia_7f_arm.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/sia_7f_arm.srdf
+  CONFIG:
+    author_name: zzy
+    author_email: zzy@123.com
+    generated_timestamp: 1557561887

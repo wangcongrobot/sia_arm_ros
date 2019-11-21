@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find sia_7f_arm_description)/config/sia_7f_arm_control.yaml" command="load"/>
+
+  <!-- load the controllers -->
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/sia_7f_arm" args="sia_7f_joint1_position_controller sia_7f_joint2_position_controller sia_7f_joint3_position_controller sia_7f_joint4_position_controller sia_7f_joint5_position_controller sia_7f_gripper_position_controller joint_state_controller --shutdown-timeout 3"/>
+
+</launch>

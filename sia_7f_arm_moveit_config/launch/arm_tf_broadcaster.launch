@@ -1,0 +1,7 @@
+<launch> <!-- Turtlesim Node--> 
+   
+    <node name="arm_tf_broadcaster" pkg="sia_7f_arm_moveit_config" type="arm_tf_broadcaster.py" respawn="false" output="screen" > 
+        <param name="arm" type="string" value="arm" /> 
+    </node> 
+
+</launch>

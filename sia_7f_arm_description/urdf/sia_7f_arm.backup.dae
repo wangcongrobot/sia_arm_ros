@@ -1,0 +1,1875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2008/03/COLLADASchema" version="1.5.0">
+	<asset>
+		<contributor>
+			<authoring_tool>URDF Collada Writer</authoring_tool>
+		</contributor>
+		<created>2019-05-03T11:31:45.000000</created>
+		<modified>2019-05-03T11:31:45.000000</modified>
+		<unit/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_visual_scenes id="vscenes">
+		<visual_scene id="vscene" name="URDF Visual Scene">
+			<node id="visual0" name="sia_7f_arm" sid="visual0">
+				<node id="vkmodel0_node6" name="sia_7f_base_link" sid="node6">
+					<translate>0 0 0</translate>
+					<rotate>1 0 0 0</rotate>
+					<instance_geometry url="#gkmodel0_sia_7f_base_link_geom0">
+						<bind_material>
+							<technique_common>
+								<instance_material symbol="mat0" target="#gkmodel0_sia_7f_base_link_geom0_mat"/>
+							</technique_common>
+						</bind_material>
+					</instance_geometry>
+					<node id="vkmodel0_node8" name="sia_7f_link1" sid="node8">
+						<translate>-0 -0 -0</translate>
+						<rotate>1 0 0 0</rotate>
+						<translate>-0.01372 0.16593 0.063</translate>
+						<rotate>1 0 0 0</rotate>
+						<rotate sid="node_sia_7f_joint1_axis0">0 0 1 0</rotate>
+						<translate>0 0 0</translate>
+						<rotate>1 0 0 0</rotate>
+						<instance_geometry url="#gkmodel0_sia_7f_link1_geom0">
+							<bind_material>
+								<technique_common>
+									<instance_material symbol="mat0" target="#gkmodel0_sia_7f_link1_geom0_mat"/>
+								</technique_common>
+							</bind_material>
+						</instance_geometry>
+						<node id="vkmodel0_node9" name="sia_7f_link2" sid="node9">
+							<translate>-0 -0 -0</translate>
+							<rotate>1 0 0 0</rotate>
+							<translate>0 0.0925 0.0785</translate>
+							<rotate>0 1 0 90.0002104591497</rotate>
+							<rotate sid="node_sia_7f_joint2_axis0">0 0 1 0</rotate>
+							<translate>0 0 0</translate>
+							<rotate>1 0 0 0</rotate>
+							<instance_geometry url="#gkmodel0_sia_7f_link2_geom0">
+								<bind_material>
+									<technique_common>
+										<instance_material symbol="mat0" target="#gkmodel0_sia_7f_link2_geom0_mat"/>
+									</technique_common>
+								</bind_material>
+							</instance_geometry>
+							<node id="vkmodel0_node10" name="sia_7f_link3" sid="node10">
+								<translate>-0 -0 -0</translate>
+								<rotate>1 0 0 0</rotate>
+								<translate>-0.95 0 0</translate>
+								<rotate>1 -4.077257664879813e-26 1.11e-20 179.9995790817006</rotate>
+								<rotate sid="node_sia_7f_joint3_axis0">0 0 -1 0</rotate>
+								<translate>0 0 0</translate>
+								<rotate>1 0 0 0</rotate>
+								<instance_geometry url="#gkmodel0_sia_7f_link3_geom0">
+									<bind_material>
+										<technique_common>
+											<instance_material symbol="mat0" target="#gkmodel0_sia_7f_link3_geom0_mat"/>
+										</technique_common>
+									</bind_material>
+								</instance_geometry>
+								<node id="vkmodel0_node11" name="sia_7f_link4" sid="node11">
+									<translate>-0 -0 -0</translate>
+									<rotate>1 0 0 0</rotate>
+									<translate>0.139 -0.127 0</translate>
+									<rotate>-0.7071054825088511 2.597353007566176e-06 0.7071080798570883 179.9997023663628</rotate>
+									<rotate sid="node_sia_7f_joint4_axis0">0 0 1 0</rotate>
+									<translate>0 0 0</translate>
+									<rotate>1 0 0 0</rotate>
+									<instance_geometry url="#gkmodel0_sia_7f_link4_geom0">
+										<bind_material>
+											<technique_common>
+												<instance_material symbol="mat0" target="#gkmodel0_sia_7f_link4_geom0_mat"/>
+											</technique_common>
+										</bind_material>
+									</instance_geometry>
+									<node id="vkmodel0_node12" name="sia_7f_link5" sid="node12">
+										<translate>-0 -0 -0</translate>
+										<rotate>1 0 0 0</rotate>
+										<translate>-0.0005 0 -0.396</translate>
+										<rotate>0 1 0 90.0002104591497</rotate>
+										<rotate sid="node_sia_7f_joint5_axis0">0 0 1 0</rotate>
+										<translate>0 0 0</translate>
+										<rotate>1 0 0 0</rotate>
+										<instance_geometry url="#gkmodel0_sia_7f_link5_geom0">
+											<bind_material>
+												<technique_common>
+													<instance_material symbol="mat0" target="#gkmodel0_sia_7f_link5_geom0_mat"/>
+												</technique_common>
+											</bind_material>
+										</instance_geometry>
+										<node id="vkmodel0_node7" name="sia_7f_gripper" sid="node7">
+											<translate>-0 -0 -0</translate>
+											<rotate>1 0 0 0</rotate>
+											<translate>0 0.2471 0.0005</translate>
+											<rotate>0.5773495622796757 -0.5773495622796757 0.5773516830069292 120.0002430171447</rotate>
+											<rotate sid="node_sia_7f_gripper_axis0">0 0 -1 0</rotate>
+											<translate>0 0 0</translate>
+											<rotate>1 0 0 0</rotate>
+											<instance_geometry url="#gkmodel0_sia_7f_gripper_geom0">
+												<bind_material>
+													<technique_common>
+														<instance_material symbol="mat0" target="#gkmodel0_sia_7f_gripper_geom0_mat"/>
+													</technique_common>
+												</bind_material>
+											</instance_geometry>
+											<node id="vkmodel0_node1" name="7f_gripper_left_inner_knuckle" sid="node1">
+												<translate>-0 -0 -0</translate>
+												<rotate>1 0 0 0</rotate>
+												<translate>0.0115 0 -0.058</translate>
+												<rotate>1 -1.024974160582345e-16 -5.679220744811683e-17 90.0002104591497</rotate>
+												<rotate sid="node_7f_gripper_left_inner_knuckle_joint_axis0">0 0 -1 0</rotate>
+												<translate>0 0 0</translate>
+												<rotate>1 0 0 0</rotate>
+												<instance_geometry url="#gkmodel0_7f_gripper_left_inner_knuckle_geom0">
+													<bind_material>
+														<technique_common>
+															<instance_material symbol="mat0" target="#gkmodel0_7f_gripper_left_inner_knuckle_geom0_mat"/>
+														</technique_common>
+													</bind_material>
+												</instance_geometry>
+											</node>
+											<node id="vkmodel0_node4" name="7f_gripper_right_inner_knuckle" sid="node4">
+												<translate>-0 -0 -0</translate>
+												<rotate>1 0 0 0</rotate>
+												<translate>-0.0115 0 -0.058</translate>
+												<rotate>1 1.003475839417655e-16 1.460520474619624e-16 90.0002104591497</rotate>
+												<rotate sid="node_7f_gripper_right_inner_knuckle_joint_axis0">0 0 -1 0</rotate>
+												<translate>0 0 0</translate>
+												<rotate>1 0 0 0</rotate>
+												<instance_geometry url="#gkmodel0_7f_gripper_right_inner_knuckle_geom0">
+													<bind_material>
+														<technique_common>
+															<instance_material symbol="mat0" target="#gkmodel0_7f_gripper_right_inner_knuckle_geom0_mat"/>
+														</technique_common>
+													</bind_material>
+												</instance_geometry>
+											</node>
+											<node id="vkmodel0_node5" name="7f_gripper_right_outer_finger" sid="node5">
+												<translate>-0 -0 -0</translate>
+												<rotate>1 0 0 0</rotate>
+												<translate>-0.0525 0 -0.028</translate>
+												<rotate>1 -1.581624160582346e-16 -1.124570029795303e-16 90.0002104591497</rotate>
+												<rotate sid="node_7f_gripper_right_outer_finger_joint_axis0">0 0 -1 0</rotate>
+												<translate>0 0 0</translate>
+												<rotate>1 0 0 0</rotate>
+												<instance_geometry url="#gkmodel0_7f_gripper_right_outer_finger_geom0">
+													<bind_material>
+														<technique_common>
+															<instance_material symbol="mat0" target="#gkmodel0_7f_gripper_right_outer_finger_geom0_mat"/>
+														</technique_common>
+													</bind_material>
+												</instance_geometry>
+												<node id="vkmodel0_node3" name="7f_gripper_right_inner_finger" sid="node3">
+													<translate>-0 -0 -0</translate>
+													<rotate>1 0 0 0</rotate>
+													<translate>-0.0005 -0.089999 0</translate>
+													<rotate>1 0 0 0</rotate>
+													<rotate sid="node_7f_gripper_right_inner_finger_joint_axis0">0 0 -1 0</rotate>
+													<translate>0 0 0</translate>
+													<rotate>1 0 0 0</rotate>
+													<instance_geometry url="#gkmodel0_7f_gripper_right_inner_finger_geom0">
+														<bind_material>
+															<technique_common>
+																<instance_material symbol="mat0" target="#gkmodel0_7f_gripper_right_inner_finger_geom0_mat"/>
+															</technique_common>
+														</bind_material>
+													</instance_geometry>
+												</node>
+											</node>
+											<node id="vkmodel0_node2" name="7f_gripper_left_outer_finger" sid="node2">
+												<translate>-0 -0 -0</translate>
+												<rotate>1 0 0 0</rotate>
+												<translate>0.0525 0 -0.028</translate>
+												<rotate>1 -1.581624160582346e-16 -1.124570029795303e-16 90.0002104591497</rotate>
+												<rotate sid="node_sia_7f_finger_joint_axis0">0 0 -1 0</rotate>
+												<translate>0 0 0</translate>
+												<rotate>1 0 0 0</rotate>
+												<instance_geometry url="#gkmodel0_7f_gripper_left_outer_finger_geom0">
+													<bind_material>
+														<technique_common>
+															<instance_material symbol="mat0" target="#gkmodel0_7f_gripper_left_outer_finger_geom0_mat"/>
+														</technique_common>
+													</bind_material>
+												</instance_geometry>
+												<node id="vkmodel0_node0" name="7f_gripper_left_inner_finger" sid="node0">
+													<translate>-0 -0 -0</translate>
+													<rotate>1 0 0 0</rotate>
+													<translate>0.0005 -0.089999 0</translate>
+													<rotate>-1 4.97021382537178e-22 1.3531e-16 179.9995790817006</rotate>
+													<rotate sid="node_7f_gripper_left_inner_finger_joint_axis0">0 0 1 0</rotate>
+													<translate>0 0 0</translate>
+													<rotate>1 0 0 0</rotate>
+													<instance_geometry url="#gkmodel0_7f_gripper_left_inner_finger_geom0">
+														<bind_material>
+															<technique_common>
+																<instance_material symbol="mat0" target="#gkmodel0_7f_gripper_left_inner_finger_geom0_mat"/>
+															</technique_common>
+														</bind_material>
+													</instance_geometry>
+												</node>
+											</node>
+										</node>
+									</node>
+								</node>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<library_geometries id="geometries">
+		<geometry id="gkmodel0_sia_7f_base_link_geom0" name="package://sia_7f_arm_description/meshes/sia_7f_base_link.STL"/>
+		<geometry id="gkmodel0_sia_7f_link1_geom0" name="package://sia_7f_arm_description/meshes/sia_7f_link1.STL"/>
+		<geometry id="gkmodel0_sia_7f_link2_geom0" name="package://sia_7f_arm_description/meshes/sia_7f_link2.STL"/>
+		<geometry id="gkmodel0_sia_7f_link3_geom0" name="package://sia_7f_arm_description/meshes/sia_7f_link3.STL"/>
+		<geometry id="gkmodel0_sia_7f_link4_geom0" name="package://sia_7f_arm_description/meshes/sia_7f_link4.STL"/>
+		<geometry id="gkmodel0_sia_7f_link5_geom0" name="package://sia_7f_arm_description/meshes/sia_7f_link5.STL"/>
+		<geometry id="gkmodel0_sia_7f_gripper_geom0" name="package://sia_7f_arm_description/meshes/sia_7f_gripper.STL"/>
+		<geometry id="gkmodel0_7f_gripper_left_inner_knuckle_geom0" name="package://sia_7f_arm_description/meshes/7f_gripper_left_inner_knuckle.STL"/>
+		<geometry id="gkmodel0_7f_gripper_right_inner_knuckle_geom0" name="package://sia_7f_arm_description/meshes/7f_gripper_right_inner_knuckle.STL"/>
+		<geometry id="gkmodel0_7f_gripper_right_outer_finger_geom0" name="package://sia_7f_arm_description/meshes/7f_gripper_right_outer_finger.STL"/>
+		<geometry id="gkmodel0_7f_gripper_right_inner_finger_geom0" name="package://sia_7f_arm_description/meshes/7f_gripper_right_inner_finger.STL"/>
+		<geometry id="gkmodel0_7f_gripper_left_outer_finger_geom0" name="package://sia_7f_arm_description/meshes/7f_gripper_left_outer_finger.STL"/>
+		<geometry id="gkmodel0_7f_gripper_left_inner_finger_geom0" name="package://sia_7f_arm_description/meshes/7f_gripper_left_inner_finger.STL"/>
+	</library_geometries>
+	<library_effects id="effects">
+		<effect id="gkmodel0_sia_7f_base_link_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.658823549747467 0.6549019813537598 0.4039215743541718 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.658823549747467 0.6549019813537598 0.4039215743541718 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_base_link_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.658823549747467 0.6549019813537598 0.4039215743541718 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.658823549747467 0.6549019813537598 0.4039215743541718 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link1_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link1_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link2_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link2_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link3_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link3_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link4_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link4_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link5_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_link5_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7529411911964417 0.7529411911964417 0.7529411911964417 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_gripper_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_sia_7f_gripper_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_left_inner_knuckle_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_left_inner_knuckle_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_right_inner_knuckle_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_right_inner_knuckle_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_right_outer_finger_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_right_outer_finger_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_right_inner_finger_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_right_inner_finger_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_left_outer_finger_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_left_outer_finger_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_left_inner_finger_geom0">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="gkmodel0_7f_gripper_left_inner_finger_geom0_eff">
+			<profile_COMMON>
+				<technique sid="">
+					<phong>
+						<ambient>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.7921568751335144 0.8196078538894653 0.9333333373069763 1</color>
+						</diffuse>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials id="materials">
+		<material id="gkmodel0_sia_7f_base_link_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_base_link_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_sia_7f_base_link_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_base_link_geom0"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link1_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link1_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link1_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link1_geom0"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link2_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link2_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link2_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link2_geom0"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link3_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link3_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link3_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link3_geom0"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link4_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link4_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link4_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link4_geom0"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link5_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link5_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_sia_7f_link5_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_link5_geom0"/>
+		</material>
+		<material id="gkmodel0_sia_7f_gripper_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_gripper_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_sia_7f_gripper_geom0_mat">
+			<instance_effect url="#gkmodel0_sia_7f_gripper_geom0"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_left_inner_knuckle_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_left_inner_knuckle_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_left_inner_knuckle_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_left_inner_knuckle_geom0"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_right_inner_knuckle_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_right_inner_knuckle_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_right_inner_knuckle_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_right_inner_knuckle_geom0"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_right_outer_finger_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_right_outer_finger_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_right_outer_finger_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_right_outer_finger_geom0"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_right_inner_finger_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_right_inner_finger_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_right_inner_finger_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_right_inner_finger_geom0"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_left_outer_finger_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_left_outer_finger_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_left_outer_finger_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_left_outer_finger_geom0"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_left_inner_finger_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_left_inner_finger_geom0_eff"/>
+		</material>
+		<material id="gkmodel0_7f_gripper_left_inner_finger_geom0_mat">
+			<instance_effect url="#gkmodel0_7f_gripper_left_inner_finger_geom0"/>
+		</material>
+	</library_materials>
+	<library_kinematics_models id="kmodels">
+		<kinematics_model id="kmodel0" name="sia_7f_arm">
+			<technique_common>
+				<joint name="7f_gripper_left_inner_finger_joint" sid="7f_gripper_left_inner_finger_joint">
+					<revolute sid="axis0">
+						<axis>0 0 1</axis>
+						<limits>
+							<min>-57.29577951308232</min>
+							<max>57.29577951308232</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="7f_gripper_left_inner_knuckle_joint" sid="7f_gripper_left_inner_knuckle_joint">
+					<revolute sid="axis0">
+						<axis>0 0 -1</axis>
+						<limits>
+							<min>-57.29577951308232</min>
+							<max>57.29577951308232</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="7f_gripper_right_inner_finger_joint" sid="7f_gripper_right_inner_finger_joint">
+					<revolute sid="axis0">
+						<axis>0 0 -1</axis>
+						<limits>
+							<min>-57.29577951308232</min>
+							<max>57.29577951308232</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="7f_gripper_right_inner_knuckle_joint" sid="7f_gripper_right_inner_knuckle_joint">
+					<revolute sid="axis0">
+						<axis>0 0 -1</axis>
+						<limits>
+							<min>-57.29577951308232</min>
+							<max>57.29577951308232</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="7f_gripper_right_outer_finger_joint" sid="7f_gripper_right_outer_finger_joint">
+					<revolute sid="axis0">
+						<axis>0 0 -1</axis>
+						<limits>
+							<min>-57.29577951308232</min>
+							<max>57.29577951308232</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="sia_7f_finger_joint" sid="sia_7f_finger_joint">
+					<revolute sid="axis0">
+						<axis>0 0 -1</axis>
+						<limits>
+							<min>-57.29577951308232</min>
+							<max>0</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="sia_7f_gripper" sid="sia_7f_gripper">
+					<revolute sid="axis0">
+						<axis>0 0 -1</axis>
+						<limits>
+							<min>-89.95437383553924</min>
+							<max>89.95437383553924</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="sia_7f_joint1" sid="sia_7f_joint1">
+					<revolute sid="axis0">
+						<axis>0 0 1</axis>
+						<limits>
+							<min>-57.29577951308232</min>
+							<max>57.29577951308232</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="sia_7f_joint2" sid="sia_7f_joint2">
+					<revolute sid="axis0">
+						<axis>0 0 1</axis>
+						<limits>
+							<min>-89.95437383553924</min>
+							<max>0</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="sia_7f_joint3" sid="sia_7f_joint3">
+					<revolute sid="axis0">
+						<axis>0 0 -1</axis>
+						<limits>
+							<min>0</min>
+							<max>89.95437383553924</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="sia_7f_joint4" sid="sia_7f_joint4">
+					<revolute sid="axis0">
+						<axis>0 0 1</axis>
+						<limits>
+							<min>-40.10704565915762</min>
+							<max>40.10704565915762</max>
+						</limits>
+					</revolute>
+				</joint>
+				<joint name="sia_7f_joint5" sid="sia_7f_joint5">
+					<revolute sid="axis0">
+						<axis>0 0 1</axis>
+						<limits>
+							<min>-89.95437383553924</min>
+							<max>0</max>
+						</limits>
+					</revolute>
+				</joint>
+				<link sid="sia_7f_base_link" name="sia_7f_base_link">
+					<attachment_full joint="kmodel0/sia_7f_joint1">
+						<translate>-0.01372 0.16593 0.063</translate>
+						<rotate>1 0 0 0</rotate>
+						<link sid="sia_7f_link1" name="sia_7f_link1">
+							<attachment_full joint="kmodel0/sia_7f_joint2">
+								<translate>0 0.0925 0.0785</translate>
+								<rotate>0 1 0 90.0002104591497</rotate>
+								<link sid="sia_7f_link2" name="sia_7f_link2">
+									<attachment_full joint="kmodel0/sia_7f_joint3">
+										<translate>-0.95 0 0</translate>
+										<rotate>1 -4.077257664879813e-26 1.11e-20 179.9995790817006</rotate>
+										<link sid="sia_7f_link3" name="sia_7f_link3">
+											<attachment_full joint="kmodel0/sia_7f_joint4">
+												<translate>0.139 -0.127 0</translate>
+												<rotate>-0.7071054825088511 2.597353007566176e-06 0.7071080798570883 179.9997023663628</rotate>
+												<link sid="sia_7f_link4" name="sia_7f_link4">
+													<attachment_full joint="kmodel0/sia_7f_joint5">
+														<translate>-0.0005 0 -0.396</translate>
+														<rotate>0 1 0 90.0002104591497</rotate>
+														<link sid="sia_7f_link5" name="sia_7f_link5">
+															<attachment_full joint="kmodel0/sia_7f_gripper">
+																<translate>0 0.2471 0.0005</translate>
+																<rotate>0.5773495622796757 -0.5773495622796757 0.5773516830069292 120.0002430171447</rotate>
+																<link sid="sia_7f_gripper" name="sia_7f_gripper">
+																	<attachment_full joint="kmodel0/7f_gripper_left_inner_knuckle_joint">
+																		<translate>0.0115 0 -0.058</translate>
+																		<rotate>1 -1.024974160582345e-16 -5.679220744811683e-17 90.0002104591497</rotate>
+																		<link sid="7f_gripper_left_inner_knuckle" name="7f_gripper_left_inner_knuckle"/>
+																	</attachment_full>
+																	<attachment_full joint="kmodel0/7f_gripper_right_inner_knuckle_joint">
+																		<translate>-0.0115 0 -0.058</translate>
+																		<rotate>1 1.003475839417655e-16 1.460520474619624e-16 90.0002104591497</rotate>
+																		<link sid="7f_gripper_right_inner_knuckle" name="7f_gripper_right_inner_knuckle"/>
+																	</attachment_full>
+																	<attachment_full joint="kmodel0/7f_gripper_right_outer_finger_joint">
+																		<translate>-0.0525 0 -0.028</translate>
+																		<rotate>1 -1.581624160582346e-16 -1.124570029795303e-16 90.0002104591497</rotate>
+																		<link sid="7f_gripper_right_outer_finger" name="7f_gripper_right_outer_finger">
+																			<attachment_full joint="kmodel0/7f_gripper_right_inner_finger_joint">
+																				<translate>-0.0005 -0.089999 0</translate>
+																				<rotate>1 0 0 0</rotate>
+																				<link sid="7f_gripper_right_inner_finger" name="7f_gripper_right_inner_finger"/>
+																			</attachment_full>
+																		</link>
+																	</attachment_full>
+																	<attachment_full joint="kmodel0/sia_7f_finger_joint">
+																		<translate>0.0525 0 -0.028</translate>
+																		<rotate>1 -1.581624160582346e-16 -1.124570029795303e-16 90.0002104591497</rotate>
+																		<link sid="7f_gripper_left_outer_finger" name="7f_gripper_left_outer_finger">
+																			<attachment_full joint="kmodel0/7f_gripper_left_inner_finger_joint">
+																				<translate>0.0005 -0.089999 0</translate>
+																				<rotate>-1 4.97021382537178e-22 1.3531e-16 179.9995790817006</rotate>
+																				<link sid="7f_gripper_left_inner_finger" name="7f_gripper_left_inner_finger"/>
+																			</attachment_full>
+																		</link>
+																	</attachment_full>
+																</link>
+															</attachment_full>
+														</link>
+													</attachment_full>
+												</link>
+											</attachment_full>
+										</link>
+									</attachment_full>
+								</link>
+							</attachment_full>
+						</link>
+					</attachment_full>
+				</link>
+				<formula sid="7f_gripper_left_inner_finger_joint_formula">
+					<target>
+						<param>kmodel0/7f_gripper_left_inner_finger_joint</param>
+					</target>
+					<technique_common>
+						<math>
+							<apply>
+								<plus/>
+								<apply>
+									<times/>
+									<cn>-1.000000</cn>
+									<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+								</apply>
+								<cn>0.000000</cn>
+							</apply>
+						</math>
+					</technique_common>
+					<technique profile="OpenRAVE">
+						<equation type="position">
+							<math>
+								<apply>
+									<plus/>
+									<apply>
+										<times/>
+										<cn>-1.000000</cn>
+										<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+									</apply>
+									<cn>0.000000</cn>
+								</apply>
+							</math>
+						</equation>
+						<equation type="first_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>-1.000000</cn>
+						</equation>
+						<equation type="second_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>-1.000000</cn>
+						</equation>
+					</technique>
+				</formula>
+				<formula sid="7f_gripper_left_inner_knuckle_joint_formula">
+					<target>
+						<param>kmodel0/7f_gripper_left_inner_knuckle_joint</param>
+					</target>
+					<technique_common>
+						<math>
+							<apply>
+								<plus/>
+								<apply>
+									<times/>
+									<cn>1.000000</cn>
+									<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+								</apply>
+								<cn>0.000000</cn>
+							</apply>
+						</math>
+					</technique_common>
+					<technique profile="OpenRAVE">
+						<equation type="position">
+							<math>
+								<apply>
+									<plus/>
+									<apply>
+										<times/>
+										<cn>1.000000</cn>
+										<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+									</apply>
+									<cn>0.000000</cn>
+								</apply>
+							</math>
+						</equation>
+						<equation type="first_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>1.000000</cn>
+						</equation>
+						<equation type="second_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>1.000000</cn>
+						</equation>
+					</technique>
+				</formula>
+				<formula sid="7f_gripper_right_inner_finger_joint_formula">
+					<target>
+						<param>kmodel0/7f_gripper_right_inner_finger_joint</param>
+					</target>
+					<technique_common>
+						<math>
+							<apply>
+								<plus/>
+								<apply>
+									<times/>
+									<cn>1.000000</cn>
+									<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+								</apply>
+								<cn>0.000000</cn>
+							</apply>
+						</math>
+					</technique_common>
+					<technique profile="OpenRAVE">
+						<equation type="position">
+							<math>
+								<apply>
+									<plus/>
+									<apply>
+										<times/>
+										<cn>1.000000</cn>
+										<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+									</apply>
+									<cn>0.000000</cn>
+								</apply>
+							</math>
+						</equation>
+						<equation type="first_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>1.000000</cn>
+						</equation>
+						<equation type="second_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>1.000000</cn>
+						</equation>
+					</technique>
+				</formula>
+				<formula sid="7f_gripper_right_inner_knuckle_joint_formula">
+					<target>
+						<param>kmodel0/7f_gripper_right_inner_knuckle_joint</param>
+					</target>
+					<technique_common>
+						<math>
+							<apply>
+								<plus/>
+								<apply>
+									<times/>
+									<cn>-1.000000</cn>
+									<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+								</apply>
+								<cn>0.000000</cn>
+							</apply>
+						</math>
+					</technique_common>
+					<technique profile="OpenRAVE">
+						<equation type="position">
+							<math>
+								<apply>
+									<plus/>
+									<apply>
+										<times/>
+										<cn>-1.000000</cn>
+										<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+									</apply>
+									<cn>0.000000</cn>
+								</apply>
+							</math>
+						</equation>
+						<equation type="first_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>-1.000000</cn>
+						</equation>
+						<equation type="second_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>-1.000000</cn>
+						</equation>
+					</technique>
+				</formula>
+				<formula sid="7f_gripper_right_outer_finger_joint_formula">
+					<target>
+						<param>kmodel0/7f_gripper_right_outer_finger_joint</param>
+					</target>
+					<technique_common>
+						<math>
+							<apply>
+								<plus/>
+								<apply>
+									<times/>
+									<cn>-1.000000</cn>
+									<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+								</apply>
+								<cn>0.000000</cn>
+							</apply>
+						</math>
+					</technique_common>
+					<technique profile="OpenRAVE">
+						<equation type="position">
+							<math>
+								<apply>
+									<plus/>
+									<apply>
+										<times/>
+										<cn>-1.000000</cn>
+										<csymbol encoding="COLLADA">kmodel0/sia_7f_finger_joint</csymbol>
+									</apply>
+									<cn>0.000000</cn>
+								</apply>
+							</math>
+						</equation>
+						<equation type="first_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>-1.000000</cn>
+						</equation>
+						<equation type="second_partial" target="kmodel0/sia_7f_finger_joint">
+							<cn>-1.000000</cn>
+						</equation>
+					</technique>
+				</formula>
+			</technique_common>
+		</kinematics_model>
+	</library_kinematics_models>
+	<library_articulated_systems id="asystems">
+		<articulated_system id="robot0_motion">
+			<motion>
+				<instance_articulated_system url="#robot0_kinematics">
+					<newparam sid="robot0_motion_kmodel0_inst">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0_value</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0_value">
+						<SIDREF>robot0_kinematics/robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0_value</SIDREF>
+					</newparam>
+				</instance_articulated_system>
+				<technique_common>
+					<axis_info axis="robot0_kinematics/axis_info_inst0">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst1">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst2">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst3">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst4">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst5">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst6">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst7">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst8">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst9">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst10">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+					<axis_info axis="robot0_kinematics/axis_info_inst11">
+						<speed>
+							<float>1</float>
+						</speed>
+						<acceleration>
+							<float>1</float>
+						</acceleration>
+					</axis_info>
+				</technique_common>
+			</motion>
+		</articulated_system>
+		<articulated_system id="robot0_kinematics">
+			<kinematics>
+				<instance_kinematics_model url="#kmodel0" sid="kmodel0_inst">
+					<newparam sid="robot0_kinematics_kmodel0_inst">
+						<SIDREF>robot0_kinematics/kmodel0_inst</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/7f_gripper_left_inner_finger_joint/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/7f_gripper_left_inner_knuckle_joint/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/7f_gripper_right_inner_finger_joint/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/7f_gripper_right_inner_knuckle_joint/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/7f_gripper_right_outer_finger_joint/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/sia_7f_finger_joint/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/sia_7f_gripper/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/sia_7f_joint1/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/sia_7f_joint2/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/sia_7f_joint3/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/sia_7f_joint4/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0_value">
+						<float>0</float>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0">
+						<SIDREF>robot0_kinematics/kmodel0_inst/sia_7f_joint5/axis0</SIDREF>
+					</newparam>
+					<newparam sid="robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0_value">
+						<float>0</float>
+					</newparam>
+				</instance_kinematics_model>
+				<technique_common>
+					<axis_info sid="axis_info_inst0" axis="kmodel0/7f_gripper_left_inner_finger_joint/axis0">
+						<active>
+							<bool>false</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-57.29577951308232</float>
+							</min>
+							<max>
+								<float>57.29577951308232</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst1" axis="kmodel0/7f_gripper_left_inner_knuckle_joint/axis0">
+						<active>
+							<bool>false</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-57.29577951308232</float>
+							</min>
+							<max>
+								<float>57.29577951308232</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst2" axis="kmodel0/7f_gripper_right_inner_finger_joint/axis0">
+						<active>
+							<bool>false</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-57.29577951308232</float>
+							</min>
+							<max>
+								<float>57.29577951308232</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst3" axis="kmodel0/7f_gripper_right_inner_knuckle_joint/axis0">
+						<active>
+							<bool>false</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-57.29577951308232</float>
+							</min>
+							<max>
+								<float>57.29577951308232</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst4" axis="kmodel0/7f_gripper_right_outer_finger_joint/axis0">
+						<active>
+							<bool>false</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-57.29577951308232</float>
+							</min>
+							<max>
+								<float>57.29577951308232</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst5" axis="kmodel0/sia_7f_finger_joint/axis0">
+						<active>
+							<bool>true</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-57.29577951308232</float>
+							</min>
+							<max>
+								<float>0</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst6" axis="kmodel0/sia_7f_gripper/axis0">
+						<active>
+							<bool>true</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-89.95437383553924</float>
+							</min>
+							<max>
+								<float>89.95437383553924</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst7" axis="kmodel0/sia_7f_joint1/axis0">
+						<active>
+							<bool>true</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-57.29577951308232</float>
+							</min>
+							<max>
+								<float>57.29577951308232</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst8" axis="kmodel0/sia_7f_joint2/axis0">
+						<active>
+							<bool>true</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-89.95437383553924</float>
+							</min>
+							<max>
+								<float>0</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst9" axis="kmodel0/sia_7f_joint3/axis0">
+						<active>
+							<bool>true</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>0</float>
+							</min>
+							<max>
+								<float>89.95437383553924</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst10" axis="kmodel0/sia_7f_joint4/axis0">
+						<active>
+							<bool>true</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-40.10704565915762</float>
+							</min>
+							<max>
+								<float>40.10704565915762</float>
+							</max>
+						</limits>
+					</axis_info>
+					<axis_info sid="axis_info_inst11" axis="kmodel0/sia_7f_joint5/axis0">
+						<active>
+							<bool>true</bool>
+						</active>
+						<locked>
+							<bool>false</bool>
+						</locked>
+						<limits>
+							<min>
+								<float>-89.95437383553924</float>
+							</min>
+							<max>
+								<float>0</float>
+							</max>
+						</limits>
+					</axis_info>
+				</technique_common>
+			</kinematics>
+		</articulated_system>
+	</library_articulated_systems>
+	<library_kinematics_scenes id="kscenes">
+		<kinematics_scene id="kscene" name="URDF Kinematics Scene">
+			<instance_articulated_system sid="robot0_motion_inst" url="#robot0_motion" name="sia_7f_arm">
+				<bind symbol="kscene_kmodel0_inst">
+					<param ref="robot0_motion/robot0_motion_kmodel0_inst"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0_value"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0"/>
+				</bind>
+				<bind symbol="kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0_value">
+					<param ref="robot0_motion/robot0_motion_robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0_value"/>
+				</bind>
+			</instance_articulated_system>
+		</kinematics_scene>
+	</library_kinematics_scenes>
+	<library_physics_scenes id="pscenes">
+		<physics_scene id="pscene" name="URDF Physics Scene">
+			<instance_physics_model url="#pmodel0" sid="pmodel0_inst" parent="#visual0">
+				<instance_rigid_body body="rigid0" target="#vkmodel0_node0"/>
+				<instance_rigid_body body="rigid1" target="#vkmodel0_node1"/>
+				<instance_rigid_body body="rigid2" target="#vkmodel0_node2"/>
+				<instance_rigid_body body="rigid3" target="#vkmodel0_node3"/>
+				<instance_rigid_body body="rigid4" target="#vkmodel0_node4"/>
+				<instance_rigid_body body="rigid5" target="#vkmodel0_node5"/>
+				<instance_rigid_body body="rigid6" target="#vkmodel0_node6"/>
+				<instance_rigid_body body="rigid7" target="#vkmodel0_node7"/>
+				<instance_rigid_body body="rigid8" target="#vkmodel0_node8"/>
+				<instance_rigid_body body="rigid9" target="#vkmodel0_node9"/>
+				<instance_rigid_body body="rigid10" target="#vkmodel0_node10"/>
+				<instance_rigid_body body="rigid11" target="#vkmodel0_node11"/>
+				<instance_rigid_body body="rigid12" target="#vkmodel0_node12"/>
+			</instance_physics_model>
+			<technique_common>
+				<gravity>0 0 0</gravity>
+			</technique_common>
+		</physics_scene>
+	</library_physics_scenes>
+	<library_physics_models id="pmodels">
+		<physics_model id="pmodel0" name="sia_7f_arm">
+			<rigid_body sid="rigid0" name="7f_gripper_left_inner_finger">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>0.124284698819219</mass>
+					<mass_frame>
+						<translate>0.008473208998715547 0.8026722926864107 0.5565046032839758</translate>
+						<rotate>5.128860079514213e-05 7.935911003652718e-06 -0.9999999986532504 23.7208790970445</rotate>
+					</mass_frame>
+					<inertia>0.0001925538092400104 5.514398011471118e-05 0.0001682511762554577</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid1" name="7f_gripper_left_inner_knuckle">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>0.057581795389513</mass>
+					<mass_frame>
+						<translate>-0.001970526019541639 0.7355323010317368 0.556503113783852</translate>
+						<rotate>-0.9999961317279633 -0.002781461685788353 -2.037982653350637e-08 179.9991581650943</rotate>
+					</mass_frame>
+					<inertia>0.0001360356818490176 5.362273365315409e-05 8.47531530961166e-05</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid2" name="7f_gripper_left_outer_finger">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>0.100689431754135</mass>
+					<mass_frame>
+						<translate>0.03902969437165775 0.7055326022371868 0.5565027831945831</translate>
+						<rotate>-0.9999961317279633 -0.002781461685785229 -2.03798263660066e-08 179.9991581650943</rotate>
+					</mass_frame>
+					<inertia>0.0001791288630415502 5.767454997047012e-05 0.000126092678843798</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid3" name="7f_gripper_right_inner_finger">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>0.12428469881922</mass>
+					<mass_frame>
+						<translate>-0.03591524751204295 0.802671966597989 0.5565042006725331</translate>
+						<rotate>-0.9786496177471015 -0.2055357041461567 -2.143768926731397e-06 179.9991482780627</rotate>
+					</mass_frame>
+					<inertia>0.0001925538092400131 5.51439801147116e-05 0.0001682511762554597</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid4" name="7f_gripper_right_inner_knuckle">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>0.057581795389513</mass>
+					<mass_frame>
+						<translate>-0.02547052601890755 0.7355321283910974 0.5565031137838519</translate>
+						<rotate>-0.9999961521347382 0.002774115303489803 2.043379575969617e-08 179.9991581651115</rotate>
+					</mass_frame>
+					<inertia>0.0001360356818490178 5.362273365315408e-05 8.47531530961168e-05</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid5" name="7f_gripper_right_outer_finger">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>0.100689431754135</mass>
+					<mass_frame>
+						<translate>-0.06647030562549536 0.705531827190911 0.5565027831945831</translate>
+						<rotate>-0.9999961521347382 0.00277411530349306 2.043379609274708e-08 179.9991581651115</rotate>
+					</mass_frame>
+					<inertia>0.00017912886304155 5.767454997047028e-05 0.000126092678843797</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid6" name="sia_7f_base_link">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>8.90916939429998</mass>
+					<mass_frame>
+						<translate>0.0005521212644276769 -0.00865338938246674 0.06299803886024651</translate>
+						<rotate>-0.0001625180126822991 -8.348052455945966e-05 -0.9999999833094486 1.456647287778322</rotate>
+					</mass_frame>
+					<inertia>0.07991059146510116 0.03981333619829563 0.08619963134296832</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid7" name="sia_7f_gripper">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>0.217996643227686</mass>
+					<mass_frame>
+						<translate>-0.01371990322377387 0.6552057888676116 0.5565020633236936</translate>
+						<rotate>-0.9999999999931778 -3.673202955582417e-06 -3.897937567438647e-07 179.9993686208408</rotate>
+					</mass_frame>
+					<inertia>0.0002093211125693508 0.0003297099512188182 0.000281938189060602</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid8" name="sia_7f_link1">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>2.47722330671474</mass>
+					<mass_frame>
+						<translate>-0.01849248755414533 0.220794800395508 0.0805766290434111</translate>
+						<rotate>0.8927257816418742 -0.3496100246042565 -0.2842771701845151 59.35068077309281</rotate>
+					</mass_frame>
+					<inertia>0.008599400554595887 0.009147998794907346 0.004835667329056777</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid9" name="sia_7f_link2">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>20.0355772787931</mass>
+					<mass_frame>
+						<translate>-0.01304681922433276 0.2241028424166603 0.6180967352453383</translate>
+						<rotate>0.002137386240235794 0.9999969673313583 -0.00122348197627269 90.00036945118028</rotate>
+					</mass_frame>
+					<inertia>0.1025186798352796 1.270508484627459 1.300773579795598</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid10" name="sia_7f_link3">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>14.7884795223293</mass>
+					<mass_frame>
+						<translate>-0.01355657574828695 0.3724827455346388 1.047506867294962</translate>
+						<rotate>0.7066489108418498 -0.05826183559622931 -0.7051615951815481 174.8572892578896</rotate>
+					</mass_frame>
+					<inertia>0.06159467862580394 0.08921122841919572 0.1028348905323929</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid11" name="sia_7f_link4">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>4.55297800469122</mass>
+					<mass_frame>
+						<translate>-0.01377129005959558 0.3870822226964752 0.7581018882706543</translate>
+						<rotate>0.9990204270769367 -0.0381117865967612 0.02248728541682419 1.21850497971624</rotate>
+					</mass_frame>
+					<inertia>0.07419475396753787 0.07552149225098619 0.01412351567587384</inertia>
+				</technique_common>
+			</rigid_body>
+			<rigid_body sid="rigid12" name="sia_7f_link5">
+				<technique_common>
+					<dynamic>true</dynamic>
+					<mass>14.651521079117</mass>
+					<mass_frame>
+						<translate>-0.01371899144365741 0.5268531028766669 0.556918444908965</translate>
+						<rotate>0.02068022355518018 0.9995720864828518 0.02068749085863735 90.0247420541111</rotate>
+					</mass_frame>
+					<inertia>0.05112226693323673 0.03666453442303577 0.0509324272759214</inertia>
+				</technique_common>
+			</rigid_body>
+		</physics_model>
+	</library_physics_models>
+	<scene>
+		<instance_physics_scene url="#pscene"/>
+		<instance_visual_scene url="#vscene"/>
+		<instance_kinematics_scene url="#kscene">
+			<bind_kinematics_model node="visual0/node6">
+				<param>kscene_kmodel0_inst</param>
+			</bind_kinematics_model>
+			<bind_joint_axis target="node6/node8/node9/node10/node11/node12/node7/node0/node_7f_gripper_left_inner_finger_joint_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_finger_joint_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node8/node9/node10/node11/node12/node1/node_7f_gripper_left_inner_knuckle_joint_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_left_inner_knuckle_joint_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node8/node9/node10/node11/node12/node7/node3/node_7f_gripper_right_inner_finger_joint_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_finger_joint_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node8/node9/node10/node11/node12/node4/node_7f_gripper_right_inner_knuckle_joint_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_inner_knuckle_joint_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node8/node9/node10/node11/node12/node5/node_7f_gripper_right_outer_finger_joint_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_7f_gripper_right_outer_finger_joint_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node8/node9/node10/node11/node12/node2/node_sia_7f_finger_joint_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_finger_joint_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node8/node9/node10/node11/node7/node_sia_7f_gripper_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_gripper_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node8/node_sia_7f_joint1_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint1_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node9/node_sia_7f_joint2_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint2_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node8/node10/node_sia_7f_joint3_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint3_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node8/node9/node11/node_sia_7f_joint4_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint4_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+			<bind_joint_axis target="node6/node8/node9/node10/node12/node_sia_7f_joint5_axis0">
+				<axis>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0</param>
+				</axis>
+				<value>
+					<param>kscene_kmodel0_inst_robot0_kinematics_kmodel0_inst_sia_7f_joint5_axis0_value</param>
+				</value>
+			</bind_joint_axis>
+		</instance_kinematics_scene>
+	</scene>
+	<extra id="sensors" type="library_sensors">
+		<technique profile="OpenRAVE"/>
+	</extra>
+</COLLADA>

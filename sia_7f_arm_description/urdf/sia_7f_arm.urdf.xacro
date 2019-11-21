@@ -1,0 +1,891 @@
+<?xml version="1.0"?>
+<!-- sia 7f  Manipulator -->
+<robot name="sia_7f_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Constants for robot dimensions -->
+  <xacro:property name="PI" value="3.1415926535897931"/>
+  <xacro:property name="mass" value="1" /> <!-- arbitrary value for mass -->
+
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find sia_7f_arm_description)/urdf/sia_7f_arm.gazebo" />
+
+  <!-- Import Rviz colors -->
+  <xacro:include filename="$(find sia_7f_arm_description)/urdf/materials.xacro" />
+
+
+  <!-- Used for fixing robot to Gazebo 'base_link' -->
+  <!--link name="world"/>
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="sia_7f_base_link"/>
+  </joint-->
+
+  <gazebo>
+     <!-- loading plugin: mimic joints works in gazebo now -->
+     <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="sia_7f_arm_gripper_1">
+       <joint>sia_7f_finger_joint</joint>
+       <mimicJoint>7f_gripper_left_inner_knuckle_joint</mimicJoint>
+       <!--multiplier>1.0</multiplier>
+       <offset>0.0</offset-->
+     </plugin>
+
+     <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="sia_7f_arm_gripper_2">
+       <joint>sia_7f_finger_joint</joint>
+       <mimicJoint>7f_gripper_left_inner_finger_joint</mimicJoint>
+       <multiplier>-1.0</multiplier>
+       <offset>0.0</offset>
+     </plugin>
+
+     <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="sia_7f_arm_gripper_3">
+       <joint>sia_7f_finger_joint</joint>
+       <mimicJoint>7f_gripper_right_inner_knuckle_joint</mimicJoint>
+       <multiplier>-1.0</multiplier>
+       <offset>0.0</offset>
+     </plugin>
+
+     <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="sia_7f_arm_gripper_4">
+        <joint>sia_7f_finger_joint</joint>
+        <mimicJoint>7f_gripper_right_outer_finger_joint</mimicJoint>
+        <multiplier>-1.0</multiplier>
+        <offset>0.0</offset>
+     </plugin>
+
+     <plugin filename="libroboticsgroup_gazebo_mimic_joint_plugin.so" name="sia_7f_arm_gripper_5">
+        <joint>sia_7f_finger_joint</joint>
+        <mimicJoint>7f_gripper_right_inner_finger_joint</mimicJoint>
+        <!--multiplier>1.0</multiplier>
+        <offset>0.0</offset-->
+     </plugin>
+  </gazebo>
+
+  <!-- Link -->
+  <link name="world" />
+  
+  <link
+    name="sia_7f_base_link">
+    <inertial>
+      <origin
+        xyz="0.000552121264427677 -0.00865338938246674 0.0629980388602465"
+        rpy="0 0 0" />
+      <mass
+        value="8.90916939429998" />
+      <inertia
+        ixx="0.0798846804394286"
+        ixy="0.00101896497997934"
+        ixz="1.79149005312292E-08"
+        iyy="0.0398392472247972"
+        iyz="-1.92493760430197E-07"
+        izz="0.0861996313421393" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.658823529411765 0.654901960784314 0.403921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_base_link_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="world_to_base_link=" type="fixed">
+    <parent link="world"/>
+    <child link="sia_7f_base_link"/>
+  </joint>
+
+  <link
+    name="sia_7f_link1">
+    <inertial>
+      <origin
+        xyz="-0.00477248755414533 0.054864800395508 0.0175766290434111"
+        rpy="0 0 0" />
+      <mass
+        value="2.47722330671474" />
+      <inertia
+        ixx="0.00856904452268372"
+        ixy="-0.000666387544351584"
+        ixz="-0.00020780000270144"
+        iyy="0.00626682533558291"
+        iyz="-0.00191364332827914"
+        izz="0.00774719682029338" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link1_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sia_7f_joint1"
+    type="revolute">
+    <origin
+      xyz="-0.01372 0.16593 0.063"
+      rpy="0 0 0" />
+    <parent
+      link="sia_7f_base_link" />
+    <child
+      link="sia_7f_link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="1"
+      velocity="1" />
+  </joint>
+
+  <transmission name="sia_7f_joint1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <link
+    name="sia_7f_link2">
+    <inertial>
+      <origin
+        xyz="-0.476596737714854 -0.0343271575833397 0.000671430138102419"
+        rpy="0 0 0" />
+      <mass
+        value="20.0355772787931" />
+      <inertia
+        ixx="0.102519655384336"
+        ixy="0.00106744013777462"
+        ixz="-1.43845343979595E-06"
+        iyy="1.27050785093863"
+        iyz="0.000101717905515995"
+        izz="1.30077323793537" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link2_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sia_7f_joint2"
+    type="revolute">
+    <origin
+      xyz="0 0.0925 0.0785"
+      rpy="0 1.5708 0" />
+    <parent
+      link="sia_7f_link1" />
+    <child
+      link="sia_7f_link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2"
+      upper="0"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <transmission name="sia_7f_joint2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <link
+    name="sia_7f_link3">
+    <inertial>
+      <origin
+        xyz="0.0439931321108593 -0.114052744355428 -0.000160934180912634"
+        rpy="0 0 0" />
+      <mass
+        value="14.7884795223293" />
+      <inertia
+        ixx="0.0621784176312451"
+        ixy="0.00397107315733908"
+        ixz="-0.000104775851529477"
+        iyy="0.0886327350633775"
+        iyz="0.000272407076111288"
+        izz="0.10282964488277" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link3_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sia_7f_joint3"
+    type="revolute">
+    <origin
+      xyz="-0.95 0 0"
+      rpy="-3.1416 -2.22E-20 -2.7522E-36" />
+    <parent
+      link="sia_7f_link2" />
+    <child
+      link="sia_7f_link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="2"
+      effort="1"
+      velocity="1" />
+  </joint>
+   <transmission name="sia_7f_joint3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint3">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint3_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <link
+    name="sia_7f_link4">
+    <inertial>
+      <origin
+        xyz="-5.33238969312733E-05 0.00165079495812348 -0.194398123860009"
+        rpy="0 0 0" />
+      <mass
+        value="4.55297800469122" />
+      <inertia
+        ixx="0.0741947142976996"
+        ixy="-4.27258703415459E-07"
+        ixz="-4.89922226415979E-05"
+        iyy="0.0754938009612946"
+        iyz="-0.00130361184563876"
+        izz="0.0141512466354037" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link4_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sia_7f_joint4"
+    type="revolute">
+    <origin
+      xyz="0.139 -0.127 0"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="sia_7f_link3" />
+    <child
+      link="sia_7f_link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5"
+      upper="1.5"
+      effort="1"
+      velocity="1" />
+  </joint>
+   <transmission name="sia_7f_joint4_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint4">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint4_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <link
+    name="sia_7f_link5">
+    <inertial>
+      <origin
+        xyz="-0.000417407802346559 0.141420196765034 0.000500000000005191"
+        rpy="0 0 0" />
+      <mass
+        value="14.651521079117" />
+      <inertia
+        ixx="0.0510975342812717"
+        ixy="-0.000597466620243407"
+        ixz="5.20585231291946E-19"
+        iyy="0.0366892670750008"
+        iyz="5.94826194538877E-19"
+        izz="0.0509324272759214" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_link5_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sia_7f_joint5"
+    type="revolute">
+    <origin
+      xyz="-0.0005 0 -0.396"
+      rpy="0 1.5708 0" />
+    <parent
+      link="sia_7f_link4" />
+    <child
+      link="sia_7f_link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2"
+      upper="0"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <transmission name="sia_7f_joint5_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint5">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint5_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <link
+    name="sia_7f_gripper">
+    <inertial>
+      <origin
+        xyz="3.26845956272193E-08 0 -0.0226728796969817"
+        rpy="0 0 0" />
+      <mass
+        value="0.217996643227686" />
+      <inertia
+        ixx="0.000209321112569424"
+        ixy="-3.62599757727355E-21"
+        ixz="-9.38585083804093E-11"
+        iyy="0.000281938189060602"
+        iyz="-1.21047816736719E-19"
+        izz="0.000329709951218745" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/sia_7f_gripper_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sia_7f_gripper"
+    type="revolute">
+    <origin
+      xyz="0 0.2471 0.0005"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="sia_7f_link5" />
+    <child
+      link="sia_7f_gripper" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <transmission name="sia_7f_gripper_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_gripper">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_gripper_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+<!-- ##################################################################### -->
+<!-- ##################################################################### -->
+<!-- ##################################################################### -->
+  <link
+    name="7f_gripper_left_inner_knuckle">
+    <inertial>
+      <origin
+        xyz="0.00025000000001961 -0.0449993055501968 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.057581795389513" />
+      <inertia
+        ixx="0.000136033138239505"
+        ixy="4.57842646598595E-07"
+        ixz="8.97069281394419E-21"
+        iyy="5.36252772626667E-05"
+        iyz="2.53729353711014E-20"
+        izz="8.47531530961166E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_left_inner_knuckle.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_left_inner_knuckle_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="7f_gripper_left_inner_knuckle_joint"
+    type="revolute">
+    <origin
+      xyz="0.0115 0 -0.058"
+      rpy="1.5708 -4.5705E-17 -1.5929E-16" />
+    <parent
+      link="sia_7f_gripper" />
+    <child
+      link="7f_gripper_left_inner_knuckle" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="10"
+      velocity="10" />
+    <mimic joint="sia_7f_finger_joint" multiplier="1" />
+  </joint>
+
+  <link
+    name="7f_gripper_left_outer_finger">
+    <inertial>
+      <origin
+        xyz="0.000250000000019193 -0.0449993055501973 5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.100689431754135" />
+      <inertia
+        ixx="0.00017912511445164"
+        ixy="6.74735770950199E-07"
+        ixz="-8.79238926756737E-20"
+        iyy="5.76782985603803E-05"
+        iyz="2.09544631085124E-20"
+        izz="0.000126092678843798" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_left_outer_finger.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_left_outer_finger_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sia_7f_finger_joint"
+    type="revolute">
+    <origin
+      xyz="0.0525 0 -0.028"
+      rpy="1.5708 -4.5705E-17 -2.7062E-16" />
+    <parent
+      link="sia_7f_gripper" />
+    <child
+      link="7f_gripper_left_outer_finger" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1"
+      upper="0"
+      effort="10"
+      velocity="10" />
+  </joint>
+  <transmission name="sia_7f_finger_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_finger_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_finger_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <link
+    name="7f_gripper_left_inner_finger">
+    <inertial>
+      <origin
+        xyz="-0.0308057717440851 0.0521402204950119 9.78399816720099E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.124284698819219" />
+      <inertia
+        ixx="0.000170315985615428"
+        ixy="5.06080501976649E-05"
+        ixz="8.12452749909555E-12"
+        iyy="7.73818037393233E-05"
+        iyz="-8.74033706885298E-11"
+        izz="0.000168251176255428" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_left_inner_finger.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_left_inner_finger_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="7f_gripper_left_inner_finger_joint"
+    type="continuous">
+    <origin
+      xyz="0.0005 -0.089999 0"
+      rpy="3.1416 2.7062E-16 0" />
+    <parent
+      link="7f_gripper_left_outer_finger" />
+    <child
+      link="7f_gripper_left_inner_finger" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="10"
+      velocity="10" />
+    <mimic joint="sia_7f_finger_joint" multiplier="-1.0" />
+  </joint>
+  <!-- ############# #######################################################-->
+
+  <link
+    name="7f_gripper_right_inner_knuckle">
+    <inertial>
+      <origin
+        xyz="-0.000249999999980433 -0.0449993055501972 1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.057581795389513" />
+      <inertia
+        ixx="0.000136033138239506"
+        ixy="-4.57842646526924E-07"
+        ixz="2.1159994208404E-20"
+        iyy="5.36252772626659E-05"
+        iyz="6.96442899953669E-21"
+        izz="8.47531530961168E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_right_inner_knuckle.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_right_inner_knuckle_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="7f_gripper_right_inner_knuckle_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0115 0 -0.058"
+      rpy="1.5708 -4.5705E-17 2.464E-16" />
+    <parent
+      link="sia_7f_gripper" />
+    <child
+      link="7f_gripper_right_inner_knuckle" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="10"
+      velocity="10" />
+    <mimic joint="sia_7f_finger_joint" multiplier="-1" />
+  </joint>
+  <link
+    name="7f_gripper_right_outer_finger">
+    <inertial>
+      <origin
+        xyz="-0.000249999999980766 -0.0449993055501982 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.100689431754135" />
+      <inertia
+        ixx="0.000179125114451641"
+        ixy="-6.74735770846122E-07"
+        ixz="-5.80811190437573E-20"
+        iyy="5.76782985603793E-05"
+        iyz="-2.1590416438529E-21"
+        izz="0.000126092678843797" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_right_outer_finger.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_right_outer_finger_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="7f_gripper_right_outer_finger_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0525 0 -0.028"
+      rpy="1.5708 -4.5705E-17 -2.7062E-16" />
+    <parent
+      link="sia_7f_gripper" />
+    <child
+      link="7f_gripper_right_outer_finger" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="10"
+      velocity="10" />
+    <mimic joint="sia_7f_finger_joint" multiplier="-1" />
+  </joint>
+  <link
+    name="7f_gripper_right_inner_finger">
+    <inertial>
+      <origin
+        xyz="0.0308057717439587 -0.0521402204950057 9.78399650186645E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.12428469881922" />
+      <inertia
+        ixx="0.000170315985615459"
+        ixy="5.06080501976394E-05"
+        ixz="-8.12452750782823E-12"
+        iyy="7.73818037392954E-05"
+        iyz="8.7403370609002E-11"
+        izz="0.00016825117625543" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_right_inner_finger.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sia_7f_arm_description/meshes/7f_gripper_right_inner_finger_collision.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="7f_gripper_right_inner_finger_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0005 -0.089999 0"
+      rpy="5.7309E-17 4.8572E-16 1.2328E-32" />
+    <parent
+      link="7f_gripper_right_outer_finger" />
+    <child
+      link="7f_gripper_right_inner_finger" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="10"
+      velocity="10" />
+    <mimic joint="sia_7f_finger_joint" multiplier="1.0"/>
+  </joint>
+
+</robot>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find sia_7f_arm_description)/launch/spawn_urdf.launch">
+        <arg name="x" value="0.0" />
+        <arg name="y" value="0.0" />
+        <arg name="z" value="0.2" />
+        <arg name="urdf_robot_file" value="$(find sia_7f_arm_description)/urdf/sia_7f_arm.urdf" />
+        <arg name="robot_name" value="sia_7f_arm" />
+    </include>
+</launch>

@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="sia_7f_arm_transmission" params="prefix">
+
+  <!-- Transmissions for ROS Control -->
+  <transmission name="sia_7f_joint1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint1_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="sia_7f_joint2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint2">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint2_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="sia_7f_joint3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint3">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint3_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="sia_7f_joint4_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint4">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint4_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="sia_7f_joint5_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_joint5">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_joint5_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="sia_7f_gripper_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_gripper">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_gripper_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="sia_7f_finger_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="sia_7f_finger_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="sia_7f_finger_joint_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+  
+  <!--transmission name="7f_gripper_left_inner_knuckle_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="7f_gripper_left_inner_knuckle_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="7f_gripper_left_inner_knuckle_joint_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="7f_gripper_left_outer_finger_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="7f_gripper_left_outer_finger_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="7f_gripper_left_outer_finger_joint_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="7f_gripper_left_inner_finger_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="7f_gripper_left_inner_finger_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="7f_gripper_left_inner_finger_joint_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="7f_gripper_right_inner_knuckle_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="7f_gripper_right_inner_knuckle_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="7f_gripper_right_inner_knuckle_joint_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="7f_gripper_right_outer_finger_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="7f_gripper_right_outer_finger_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="7f_gripper_right_outer_finger_joint_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="7f_gripper_right_inner_finger_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="7f_gripper_right_inner_finger_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="7f_gripper_right_inner_finger_joint_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission-->
+  
+  </xacro:macro>
+
+</robot>
