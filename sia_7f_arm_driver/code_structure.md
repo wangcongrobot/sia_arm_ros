@@ -25,3 +25,5 @@
 
 
 ros package的命名规则可以参考[ur ros](https://github.com/ros-industrial/universal_robot)
+
+参考https://github.com/huiwenzhang/kinova-grasp/tree/master/kinova_moveit/jrc18sia_motion_planner
