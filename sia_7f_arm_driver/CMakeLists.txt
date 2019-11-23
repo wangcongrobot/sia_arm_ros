@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(sia_serial)
+project(sia_7f_arm_driver)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -107,7 +107,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES sia_serial
+#  LIBRARIES sia_7f_arm_driver
 #  CATKIN_DEPENDS roscpp serial std_msgs
 #  DEPENDS system_lib
 )

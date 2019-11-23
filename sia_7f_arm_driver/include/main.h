@@ -1,7 +1,21 @@
+/**********************************************************************************************************************
+* Copyright (c) Shenyang Institute of Automation, Chinese Academy of Sciences. All rights reserved.
+* FileName: robot_abstract.h
+* Contact:  
+* Version:  V0.1
+*
+* LICENSING TERMS:
+*
+* History:
+* <author>      <time>      <version>      <desc>
+*
+* Description:
+**********************************************************************************************************************/
+
 #define _CRT_SECURE_NO_WARNINGS
-#pragma once
-#ifndef MAIN_H_INCLUDED
-#define MAIN_H_INCLUDED
+
+#ifndef MAIN_H
+#define MAIN_H
 
 #include<cstdlib>
 #include <ros/ros.h>
@@ -12,8 +26,6 @@
 #include <list>
 #include "move_control.h"
 #include "sia_7f_arm_control.h"
-
-
 
 using namespace std;
 extern void Slavor_Init(unsigned short *a,int i);//从手初始化，开始执行时被调用一次即可
@@ -30,4 +42,4 @@ extern unsigned short ik_dec_desire[7];
 extern double ik_rad_desire[7];
 extern void end_cartsian_pool(unsigned char* input);
 
-#endif
+#endif MATH_H

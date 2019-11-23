@@ -1,5 +1,5 @@
 
-#include <data_record.h>
+#include<data_record.h>
 
 
 int open_serial()
@@ -97,7 +97,6 @@ int main(int argc, char** argv)
     } 
     //关闭串口
     sp.close();
- 
 }
 */
 
@@ -122,51 +121,49 @@ void SD_msg(uint8_t* sd_msg, int n)
         sp.write(sd_msg, n);
         flag_SD = 0;
     }
-    
 }
 
 void RX_msg(uint8_t* rx_msg, size_t n)
 {
-        flag_RX = 1;       
-        if(n!=0)
+    flag_RX = 1;       
+    if(n!=0)
+    {
+        //uint8_t buffer[1024];
+        //校验并读出数据
+        n = sp.read(rx_buffer, n);
+        if(rx_buffer[0] == 0x53)
         {
-            //uint8_t buffer[1024];
-            //校验并读出数据
-            n = sp.read(rx_buffer, n);
-            if(rx_buffer[0] == 0x53)
+            for(int i=0; i<n; i++)//16进制的方式打印到屏幕
             {
-                for(int i=0; i<n; i++)//16进制的方式打印到屏幕
+                if( (rx_buffer[i] & 0xff) > 0x0f)
                 {
-                    if( (rx_buffer[i] & 0xff) > 0x0f)
-                    {
-                        std::cout << "0x" << std::hex << (rx_buffer[i] & 0xff) << " ";
-                    }
-                    else
-                    {
-                        std::cout << "0x0" << std::hex << (rx_buffer[i] & 0xff) << " ";
-                    }
+                    std::cout << "0x" << std::hex << (rx_buffer[i] & 0xff) << " ";
                 }
-                std::cout << std::endl;
-                ROS_INFO_STREAM("confirm successfully");
-            }
-            else
-            {
-                for(int i=0; i<n; i++)//16进制的方式打印到屏幕
+                else
                 {
-                    if( (rx_buffer[i] & 0xff) > 0x0f)
-                    {
-                        std::cout << "0x" << std::hex << (rx_buffer[i] & 0xff) << " ";
-                    }
-                    else
-                    {
-                        std::cout << "0x0" << std::hex << (rx_buffer[i] & 0xff) << " ";
-                    }
+                    std::cout << "0x0" << std::hex << (rx_buffer[i] & 0xff) << " ";
                 }
-                std::cout << std::endl;
-                ROS_INFO_STREAM("confirm failed.");
             }
-            
+            std::cout << std::endl;
+            ROS_INFO_STREAM("confirm successfully");
         }
+        else
+        {
+            for(int i=0; i<n; i++)//16进制的方式打印到屏幕
+            {
+                if( (rx_buffer[i] & 0xff) > 0x0f)
+                {
+                    std::cout << "0x" << std::hex << (rx_buffer[i] & 0xff) << " ";
+                }
+                else
+                {
+                    std::cout << "0x0" << std::hex << (rx_buffer[i] & 0xff) << " ";
+                }
+            }
+            std::cout << std::endl;
+            ROS_INFO_STREAM("confirm failed.");
+        }
+    }
 }
 
 

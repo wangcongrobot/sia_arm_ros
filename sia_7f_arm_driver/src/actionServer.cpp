@@ -1,26 +1,43 @@
+/**********************************************************************************************************************
+* Copyright (c) Shenyang Institute of Automation, Chinese Academy of Sciences. All rights reserved.
+* FileName: robot_abstract.h
+* Contact:  
+* Version:  V0.1
+*
+* LICENSING TERMS:
+*
+* History:
+* <author>      <time>      <version>      <desc>
+*
+* Description:
+**********************************************************************************************************************/
+
+// STL
+#include <list>
+
+// custom
 #include <sia_7f_arm_control.h>
 #include "rob_comm.h"
-#include <list>
+
 
 //#include "armplaning_client.h"
 
-using namespace std;
+// using namespace std;
 
 typedef actionlib::SimpleActionServer<control_msgs::FollowJointTrajectoryAction> TrajectoryServer;
 
-double deg2rad = 3.14159/180.0;
-double rad2deg = 180.0/3.14159;
+const double deg2rad = 3.14159/180.0;
+const double rad2deg = 180.0/3.14159;
 
 //***************************************************************************
 // Processing and JointTrajectoryAction
 void sia_executeTrajectory(const control_msgs::FollowJointTrajectoryGoalConstPtr& _goal, TrajectoryServer* _as)
 {
-  //double rad2deg = 180.0 / 3.141;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-  
+  //double rad2deg = 180.0 / 3.141;                                                                                                                                                                                                         
   robotState rs;
   double lastDuration = 0.0;
 
-  int nrOfPoints = _goal->trajectory.points.size();		// Number of points to add                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+  int nrOfPoints = _goal->trajectory.points.size();		// Number of points to add                                                                                                                                                            
   for(int i=0; i<nrOfPoints; i++)
   {
 	  rs.j[0] = _goal->trajectory.points[i].positions[0]*rad2deg;	// ros values come in rad, internally we work in degree

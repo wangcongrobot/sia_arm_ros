@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>sia_serial</name>
+  <name>sia_7f_arm_driver</name>
   <version>0.0.0</version>
-  <description>The sia_serial package</description>
+  <description>The sia_7f_arm_driver package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->

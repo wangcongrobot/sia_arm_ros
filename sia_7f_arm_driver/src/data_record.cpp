@@ -1,4 +1,19 @@
-# include <data_record.h>
+/**********************************************************************************************************************
+* Copyright (c) Shenyang Institute of Automation, Chinese Academy of Sciences. All rights reserved.
+* FileName: robot_abstract.h
+* Contact:  
+* Version:  V0.1
+*
+* LICENSING TERMS:
+*
+* History:
+* <author>      <time>      <version>      <desc>
+*
+* Description:
+**********************************************************************************************************************/
+
+#include <data_record.h>
+
 char int2char(int num)
 {
 	 char nnum = '0' + num;

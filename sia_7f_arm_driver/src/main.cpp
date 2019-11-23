@@ -36,9 +36,7 @@ int main(int argc, char** argv)
         {
             RX_msg(rx_buffer,  n);
         }
-        
 	}
-
 	
 	int m=0;
     ros::Rate loop_rate(1000);
